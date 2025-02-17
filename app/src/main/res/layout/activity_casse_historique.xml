@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/TVReajustement"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="Quantitées"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/TVReassort"
+        app:layout_constraintTop_toTopOf="@+id/TVNom" />
+
+    <TextView
+        android:id="@+id/TVReassort"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="Produit"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/TVQuantitees"
+        app:layout_constraintTop_toTopOf="@+id/TVNom" />
+
+    <TextView
+        android:id="@+id/TVQuantitees"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="Quantitées"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/TVNom"
+        app:layout_constraintTop_toTopOf="@+id/TVNom" />
+
+    <TextView
+        android:id="@+id/TVNom"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:text="Produit"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="historique de vente"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toStartOf="@id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Prix total:"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="800dp"
+        android:layout_height="987dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVNom">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TVDespe"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Despe"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVFanta" />
+
+            <TextView
+                android:id="@+id/QttB1664_2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@+id/TV1664"
+                app:layout_constraintTop_toTopOf="@+id/TV1664" />
+
+            <TextView
+                android:id="@+id/TV1664"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="1664"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="@+id/TVBierre"
+                app:layout_constraintTop_toBottomOf="@+id/TVBierre" />
+
+            <TextView
+                android:id="@+id/QttDespe2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@+id/TVDespe"
+                app:layout_constraintTop_toTopOf="@+id/TVDespe" />
+
+            <TextView
+                android:id="@+id/TVFanta"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Fanta"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVschweppes" />
+
+            <TextView
+                android:id="@+id/TVBierre"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Bierre"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/QttBierre2"
+                app:layout_constraintTop_toTopOf="@+id/QttBierre2" />
+
+            <TextView
+                android:id="@+id/QttBierre2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/TVDespe" />
+
+            <TextView
+                android:id="@+id/QttFanta2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@+id/TVFanta"
+                app:layout_constraintTop_toTopOf="@+id/TVFanta" />
+
+            <TextView
+                android:id="@+id/TVLiptonic"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Liptonic"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/QttIceTea2"
+                app:layout_constraintTop_toTopOf="@+id/QttLiptonic2" />
+
+            <TextView
+                android:id="@+id/TVschweppes"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Schweppes"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVSUp" />
+
+            <TextView
+                android:id="@+id/QttSchweppes2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@+id/TVschweppes"
+                app:layout_constraintTop_toTopOf="@+id/TVschweppes" />
+
+            <TextView
+                android:id="@+id/QttLiptonic2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/TVFanta" />
+
+            <TextView
+                android:id="@+id/TVSUp"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Seven Up"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVMinMaid" />
+
+            <TextView
+                android:id="@+id/TVOasis"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Oasis"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/QttIceTea2"
+                app:layout_constraintTop_toTopOf="@+id/QttOasis2" />
+
+            <TextView
+                android:id="@+id/QttOasis2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/TVschweppes" />
+
+            <TextView
+                android:id="@+id/QttSUp2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@+id/TVSUp"
+                app:layout_constraintTop_toTopOf="@+id/TVSUp" />
+
+            <TextView
+                android:id="@+id/QttIceTea2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/QttOrangina2" />
+
+            <TextView
+                android:id="@+id/TVIceTea"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Ice Tea"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/QttIceTea2"
+                app:layout_constraintTop_toTopOf="@+id/QttIceTea2" />
+
+            <TextView
+                android:id="@+id/TVMinMaid"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Min. Maid"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVChoco" />
+
+            <TextView
+                android:id="@+id/QttJus2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@+id/TVMinMaid"
+                app:layout_constraintTop_toTopOf="@+id/TVMinMaid" />
+
+            <TextView
+                android:id="@+id/TVOrangina"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Orangina"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/QttCappu2"
+                app:layout_constraintTop_toTopOf="@+id/QttOrangina2" />
+
+            <TextView
+                android:id="@+id/QttOrangina2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/QttCappu2" />
+
+            <TextView
+                android:id="@+id/TVCafe"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Café"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/QttCafe2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@+id/TVCafe"
+                app:layout_constraintTop_toTopOf="@+id/TVCafe" />
+
+            <TextView
+                android:id="@+id/TVThe"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Thé"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/QttThe2"
+                app:layout_constraintTop_toTopOf="@+id/TVCafe" />
+
+            <TextView
+                android:id="@+id/QttThe2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/TVThe" />
+
+            <TextView
+                android:id="@+id/TVChoco"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Chocolat"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVCafe" />
+
+            <TextView
+                android:id="@+id/QttChoco2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@+id/TVCafe"
+                app:layout_constraintTop_toTopOf="@+id/TVChoco" />
+
+            <TextView
+                android:id="@+id/TVCappu"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Cappuchino"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/QttCappu2"
+                app:layout_constraintTop_toTopOf="@+id/QttCappu2" />
+
+            <TextView
+                android:id="@+id/QttCappu2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/TVChoco" />
+
+            <!-- Plat Chaud -->
+
+            <TextView
+                android:id="@+id/TVPerrier"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Perrier"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVDespe" />
+
+            <TextView
+                android:id="@+id/QttPerrier2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@+id/TVPerrier"
+                app:layout_constraintTop_toTopOf="@+id/TVPerrier" />
+
+            <TextView
+                android:id="@+id/QttEau2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVPerrier" />
+
+            <TextView
+                android:id="@+id/TVEau"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Eau"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/QttEau2"
+                app:layout_constraintTop_toTopOf="@+id/QttEau2" />
+
+            <TextView
+                android:id="@+id/TVEauGaz"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Eau Gazeusse"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVPerrier" />
+
+            <TextView
+                android:id="@+id/QttEauGaz2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@+id/TVEauGaz"
+                app:layout_constraintTop_toTopOf="@+id/TVEauGaz" />
+
+            <TextView
+                android:id="@+id/TVCoca"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Coca"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/QttCoca2"
+                app:layout_constraintTop_toBottomOf="@+id/TVEauGaz" />
+
+            <TextView
+                android:id="@+id/QttCoca2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVEauGaz" />
+
+            <TextView
+                android:id="@+id/TVCocaC"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Coca Cherrie"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVEauGaz" />
+
+            <TextView
+                android:id="@+id/QttCocaC2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@+id/TVCocaC"
+                app:layout_constraintTop_toTopOf="@+id/TVCocaC" />
+
+            <TextView
+                android:id="@+id/TVCoca0"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Coca 0 "
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/QttCoca2"
+                app:layout_constraintTop_toTopOf="@+id/QttCoca02" />
+
+            <TextView
+                android:id="@+id/QttCoca02"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVCocaC" />
+
+            <TextView
+                android:id="@+id/TVLait"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Dosaitte Lait"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@+id/TVViennoiserie"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVCocaC" />
+
+            <TextView
+                android:id="@+id/QttLait2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@+id/TVLait"
+                app:layout_constraintTop_toTopOf="@+id/TVLait" />
+
+            <TextView
+                android:id="@+id/TVViennoiserie"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="64dp"
+                android:text="Viennoiserie"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVLait" />
+
+            <TextView
+                android:id="@+id/QttViennoiserie2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@+id/TVViennoiserie"
+                app:layout_constraintTop_toTopOf="@+id/TVViennoiserie" />
+
+            <TextView
+                android:id="@+id/TVSucette"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Sucette"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/QttSucette2"
+                app:layout_constraintTop_toTopOf="@+id/TVViennoiserie" />
+
+            <TextView
+                android:id="@+id/QttSucette2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/TVViennoiserie" />
+
+            <!-- Dessert -->
+
+            <TextView
+                android:id="@+id/TVFriandise"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Friandise"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVViennoiserie" />
+
+            <TextView
+                android:id="@+id/QttFriandise2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@+id/TVFriandise"
+                app:layout_constraintTop_toTopOf="@+id/TVFriandise" />
+
+            <TextView
+                android:id="@+id/TVGFriandise"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Maxi Friandise"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/QttGFriandise2"
+                app:layout_constraintTop_toTopOf="@+id/TVFriandise" />
+
+            <TextView
+                android:id="@+id/QttGFriandise2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/TVFriandise" />
+
+            <TextView
+                android:id="@+id/TVChips"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Chips"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVFriandise" />
+
+            <TextView
+                android:id="@+id/QttChips2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@+id/TVChips"
+                app:layout_constraintTop_toTopOf="@+id/TVChips" />
+
+            <TextView
+                android:id="@+id/TVSandwich"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Sandwhich"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/QttSandwhich2"
+                app:layout_constraintTop_toTopOf="@+id/TVChips" />
+
+            <TextView
+                android:id="@+id/QttSandwhich2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/TVChips" />
+
+            <TextView
+                android:id="@+id/TVPanini"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Panini"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVChips" />
+
+            <TextView
+                android:id="@+id/QttPanini2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@+id/TVPanini"
+                app:layout_constraintTop_toTopOf="@+id/TVPanini" />
+
+            <TextView
+                android:id="@+id/TVPaniniC"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Panini Choco"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/QttPaniniC2"
+                app:layout_constraintTop_toTopOf="@+id/TVPanini" />
+
+            <TextView
+                android:id="@+id/QttPaniniC2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/TVPanini" />
+
+
+            <TextView
+                android:id="@+id/TVCrepe"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Crepe sucrée"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVPanini" />
+
+            <TextView
+                android:id="@+id/QttCrepe2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@+id/TVCrepe"
+                app:layout_constraintTop_toTopOf="@+id/TVCrepe" />
+
+            <TextView
+                android:id="@+id/TVCrepeC"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Crepe Chocolat"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toStartOf="@+id/QttCrepeC2"
+                app:layout_constraintTop_toTopOf="@+id/TVCrepe" />
+
+            <TextView
+                android:id="@+id/QttCrepeC2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/TVCrepe" />
+
+
+            <TextView
+                android:id="@+id/TVConsigne"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="64dp"
+                android:text="Consigne"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVCrepe" />
+
+            <TextView
+                android:id="@+id/QttConsigne2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@+id/TVConsigne"
+                app:layout_constraintTop_toTopOf="@+id/TVConsigne" />
+
+            <TextView
+                android:id="@+id/TVCarte"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Carte"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/QttCrepeC2"
+                app:layout_constraintTop_toTopOf="@+id/TVConsigne" />
+
+            <TextView
+                android:id="@+id/QttCarte2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/TVConsigne" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

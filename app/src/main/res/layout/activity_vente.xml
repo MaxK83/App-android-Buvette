@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VenteActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="25dp"
+        android:text="Vente"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnDone"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_done"/>
+
+        <ImageButton
+            android:id="@+id/btnCancel"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnReste"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+        <ImageButton
+            android:id="@+id/btnReste"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnDone"
+            app:srcCompat="@drawable/ic_reste"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="377dp"
+        android:layout_height="572dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView4">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/TVProd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="35dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="860dp"
+        android:layout_height="674dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btnCoca"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/coca"/>
+
+            <ImageButton
+            android:id="@+id/btnCoca0"
+            android:layout_width="104dp"
+            android:layout_height="107dp"
+            android:layout_marginLeft="35dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/btnCoca"
+            app:layout_constraintTop_toTopOf="@+id/btnCoca"
+            app:srcCompat="@drawable/coca0" />
+
+            <ImageButton
+                android:id="@+id/btnCocaCherry3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="35dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/btnCoca0"
+                app:layout_constraintTop_toTopOf="@+id/btnCoca0"
+                app:srcCompat="@drawable/cocacherry"/>
+
+            <ImageButton
+                android:id="@+id/btnEau3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="35dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/btnCocaCherry3"
+                app:layout_constraintTop_toTopOf="@+id/btnCocaCherry3"
+                app:srcCompat="@drawable/eau"/>
+
+            <ImageButton
+                android:id="@+id/btnEauGaz3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="35dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/btnEau3"
+                app:layout_constraintTop_toTopOf="@+id/btnEau3"
+                app:srcCompat="@drawable/eaugaz"/>
+
+            <ImageButton
+                android:id="@+id/btnFanta3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/btnEauGaz3"
+                app:layout_constraintTop_toTopOf="@+id/btnEauGaz3"
+                app:srcCompat="@drawable/fanta" />
+
+            <ImageButton
+                android:id="@+id/btnIceTea3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="36dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/btnCoca"
+                app:layout_constraintTop_toBottomOf="@+id/btnCoca"
+                app:srcCompat="@drawable/icetea" />
+
+            <ImageButton
+                android:id="@+id/btnLiptonic3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="35dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/btnIceTea3"
+                app:layout_constraintTop_toTopOf="@+id/btnIceTea3"
+                app:srcCompat="@drawable/liptonic"/>
+
+            <ImageButton
+                android:id="@+id/btnMaid3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="35dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/btnLiptonic3"
+                app:layout_constraintTop_toTopOf="@+id/btnLiptonic3"
+                app:srcCompat="@drawable/maid"/>
+
+            <ImageButton
+                android:id="@+id/btnOasis3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="35dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/btnMaid3"
+                app:layout_constraintTop_toTopOf="@+id/btnMaid3"
+                app:srcCompat="@drawable/oasis"/>
+
+            <ImageButton
+                android:id="@+id/btnOrangina3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="35dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/btnOasis3"
+                app:layout_constraintTop_toTopOf="@+id/btnOasis3"
+                app:srcCompat="@drawable/orangina" />
+
+            <ImageButton
+                android:id="@+id/btnPerrier3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="35dp"
+                android:background="@color/white"
+                android:src="@drawable/perrier"
+                app:layout_constraintStart_toEndOf="@+id/btnOrangina3"
+                app:layout_constraintTop_toTopOf="@+id/btnOrangina3" />
+
+            <ImageButton
+                android:id="@+id/btnSchweppes3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="36dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/btnIceTea3"
+                app:layout_constraintTop_toBottomOf="@+id/btnIceTea3"
+                app:srcCompat="@drawable/schweppes" />
+
+            <ImageButton
+                android:id="@+id/btn7Up3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="35dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/btnSchweppes3"
+                app:layout_constraintTop_toTopOf="@+id/btnSchweppes3"
+                app:srcCompat="@drawable/up" />
+
+            <ImageButton
+                android:id="@+id/btn1664"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="35dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/btn7Up3"
+                app:layout_constraintTop_toTopOf="@+id/btn7Up3"
+                app:srcCompat="@drawable/b1664" />
+
+            <ImageButton
+                android:id="@+id/btnBierre3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="35dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/btn1664"
+                app:layout_constraintTop_toTopOf="@+id/btn1664"
+                app:srcCompat="@drawable/hieneken" />
+
+            <ImageButton
+                android:id="@+id/btnDespe3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="35dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/btnBierre3"
+                app:layout_constraintTop_toTopOf="@+id/btnBierre3"
+                app:srcCompat="@drawable/despe"/>
+
+            <ImageButton
+                android:id="@+id/btnCafe3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="35dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/btnDespe3"
+                app:layout_constraintTop_toTopOf="@+id/btnDespe3"
+                app:srcCompat="@drawable/cafe" />
+
+            <ImageButton
+                android:id="@+id/btnCappu3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="36dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/btnSchweppes3"
+                app:layout_constraintTop_toBottomOf="@+id/btnSchweppes3"
+                app:srcCompat="@drawable/cappuccino"/>
+
+            <ImageButton
+                android:id="@+id/btnChoco3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="35dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/btnCappu3"
+                app:layout_constraintTop_toTopOf="@+id/btnCappu3"
+                app:srcCompat="@drawable/chocolat" />
+
+            <ImageButton
+                android:id="@+id/btnLait"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="35dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@id/btnChoco3"
+                app:layout_constraintTop_toTopOf="@id/btnChoco3"
+                app:srcCompat="@drawable/lait"/>
+
+            <ImageButton
+                android:id="@+id/btnThe3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="32dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/btnLait"
+                app:layout_constraintTop_toTopOf="@+id/btnLait"
+                app:srcCompat="@drawable/the" />
+
+            <ImageButton
+                android:id="@+id/btnCsgn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="35dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/btnThe3"
+                app:layout_constraintTop_toTopOf="@+id/btnThe3"
+                app:srcCompat="@drawable/gobelet"/>
+
+            <ImageButton
+                android:id="@+id/btnCsgnR"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="35dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/btnCsgn"
+                app:layout_constraintTop_toTopOf="@+id/btnCsgn"
+                app:srcCompat="@drawable/gobeletr" />
+
+            <ImageButton
+                android:id="@+id/btnVienoiserie3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="36dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/btnCappu3"
+                app:layout_constraintTop_toBottomOf="@+id/btnCappu3"
+                app:srcCompat="@drawable/viennoiserie"/>
+
+            <ImageButton
+                android:id="@+id/btnChips3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="36dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/btnChoco3"
+                app:layout_constraintTop_toBottomOf="@+id/btnChoco3"
+                app:srcCompat="@drawable/chips" />
+
+            <ImageButton
+                android:id="@+id/btnKinder"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="35dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@id/btnFriandise3"
+                app:layout_constraintTop_toTopOf="@id/btnFriandise3"
+                app:srcCompat="@drawable/kinder" />
+
+            <ImageButton
+                android:id="@+id/btnPaniniChoco3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="35dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/btnChips3"
+                app:layout_constraintTop_toTopOf="@+id/btnChips3"
+                app:srcCompat="@drawable/paninichoco" />
+
+            <ImageButton
+                android:id="@+id/btnPanini"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="35dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/btnPaniniChoco3"
+                app:layout_constraintTop_toTopOf="@+id/btnPaniniChoco3"
+                app:srcCompat="@drawable/panini" />
+
+            <ImageButton
+                android:id="@+id/btnSandwich3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="35dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/btnPanini"
+                app:layout_constraintTop_toTopOf="@+id/btnPanini"
+                app:srcCompat="@drawable/sandwich" />
+
+            <ImageButton
+                android:id="@+id/btnCrepeChoco3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="35dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/btnSandwich3"
+                app:layout_constraintTop_toTopOf="@+id/btnSandwich3"
+                app:srcCompat="@drawable/crepechoco" />
+
+            <ImageButton
+                android:id="@+id/btnCrepe3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginBottom="75dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/btnChips3"
+                app:layout_constraintTop_toBottomOf="@+id/btnChips3"
+                app:srcCompat="@drawable/crepe" />
+
+            <ImageButton
+                android:id="@+id/btnFriandise3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="35dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/btnCrepe3"
+                app:layout_constraintTop_toTopOf="@+id/btnCrepe3"
+                app:srcCompat="@drawable/friandise" />
+
+            <ImageButton
+                android:id="@+id/btnSucette3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="36dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/btnKinder"
+                app:layout_constraintTop_toTopOf="@+id/btnKinder"
+                app:srcCompat="@drawable/sucette"/>
+
+            <ImageButton
+                android:id="@+id/btnCarte"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="35dp"
+                android:background="@color/white"
+                android:src="@drawable/carte"
+                app:layout_constraintStart_toEndOf="@+id/btnSucette3"
+                app:layout_constraintTop_toTopOf="@+id/btnSucette3" />
+
+            <ScrollView
+                android:id="@+id/scrollView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

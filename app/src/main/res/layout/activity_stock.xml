@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StockActivity">
+
+    <TextView
+        android:id="@+id/TVReajustement"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="Reajustement"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/TVReassort"
+        app:layout_constraintTop_toTopOf="@+id/TVNom" />
+
+    <TextView
+        android:id="@+id/TVReassort"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="Reassort"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/TVQuantitees"
+        app:layout_constraintTop_toTopOf="@+id/TVNom" />
+
+    <TextView
+        android:id="@+id/TVQuantitees"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="Quantitées"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/TVNom"
+        app:layout_constraintTop_toTopOf="@+id/TVNom" />
+
+    <TextView
+        android:id="@+id/TVNom"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:text="Produit"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Stock"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="800dp"
+        android:layout_height="987dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/BtnValide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVNom"
+        app:layout_constraintVertical_bias="0.867">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TVPain"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Pain"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVChips2" />
+
+            <TextView
+                android:id="@+id/qttChips3"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@+id/TVChips2"
+                app:layout_constraintTop_toTopOf="@+id/TVChips2" />
+
+            <EditText
+                android:id="@+id/ETPain2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/ETPain"
+                app:layout_constraintTop_toBottomOf="@+id/ETChips2" />
+
+            <EditText
+                android:id="@+id/ETPain"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/QttPain"
+                app:layout_constraintTop_toBottomOf="@+id/ETChips" />
+
+            <EditText
+                android:id="@+id/ETFanta"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/QttFanta"
+                app:layout_constraintTop_toBottomOf="@+id/QttLiptonic" />
+
+            <EditText
+                android:id="@+id/ETFanta2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/ETFanta"
+                app:layout_constraintTop_toTopOf="@+id/ETFanta" />
+
+            <EditText
+                android:id="@+id/ETMaid"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/QttMaid"
+                app:layout_constraintTop_toTopOf="@+id/QttMaid" />
+
+            <EditText
+                android:id="@+id/ETMaid2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/ETMaid"
+                app:layout_constraintTop_toBottomOf="@+id/ETFanta" />
+
+            <EditText
+                android:id="@+id/ETSchweppes2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/ETSchweppes"
+                app:layout_constraintTop_toBottomOf="@+id/ET7Up2" />
+
+            <EditText
+                android:id="@+id/ETLiptonic2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/ETLiptonic"
+                app:layout_constraintTop_toBottomOf="@+id/ETOrangina2" />
+
+            <EditText
+                android:id="@+id/ETDespe"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/QttDespe"
+                app:layout_constraintTop_toTopOf="@+id/QttDespe" />
+
+            <EditText
+                android:id="@+id/ETEauGaz2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/ETEauGaz"
+                app:layout_constraintTop_toTopOf="@+id/ETEauGaz" />
+
+            <EditText
+                android:id="@+id/ETPerrier"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/QttPerrier"
+                app:layout_constraintTop_toTopOf="@+id/QttPerrier" />
+
+            <EditText
+                android:id="@+id/ETPerrier2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/ETPerrier"
+                app:layout_constraintTop_toTopOf="@+id/ETPerrier" />
+
+            <EditText
+                android:id="@+id/ETEau"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/QttEau"
+                app:layout_constraintTop_toBottomOf="@+id/QttPerrier" />
+
+            <EditText
+                android:id="@+id/ETEau2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/ETEau"
+                app:layout_constraintTop_toTopOf="@+id/ETEau" />
+
+            <EditText
+                android:id="@+id/ETEauGaz"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/QttEauGaz"
+                app:layout_constraintTop_toBottomOf="@+id/QttEau" />
+
+            <EditText
+                android:id="@+id/ETBierre2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/ETBierre"
+                app:layout_constraintTop_toTopOf="@+id/ETBierre" />
+
+            <EditText
+                android:id="@+id/ETDespe2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/ETDespe"
+                app:layout_constraintTop_toTopOf="@+id/ETDespe" />
+
+            <EditText
+                android:id="@+id/ETBierre"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/QttBierre2"
+                app:layout_constraintTop_toTopOf="@+id/QttBierre2" />
+
+            <EditText
+                android:id="@+id/ETLiptonic"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/QttLiptonic"
+                app:layout_constraintTop_toBottomOf="@+id/ETOrangina" />
+
+            <EditText
+                android:id="@+id/ETOrangina2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/ETOrangina"
+                app:layout_constraintTop_toBottomOf="@+id/ETSchweppes2" />
+
+            <EditText
+                android:id="@+id/ETOrangina"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/QttOrangina"
+                app:layout_constraintTop_toBottomOf="@+id/ETSchweppes" />
+
+            <EditText
+                android:id="@+id/ETIceTea2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/ETIceTea"
+                app:layout_constraintTop_toBottomOf="@+id/ETCocaCherry2" />
+
+            <EditText
+                android:id="@+id/ETOasis"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/QttOasis"
+                app:layout_constraintTop_toBottomOf="@+id/ETIceTea" />
+
+            <EditText
+                android:id="@+id/ETOasis2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/ETOasis"
+                app:layout_constraintTop_toBottomOf="@+id/ETIceTea2" />
+
+            <EditText
+                android:id="@+id/ET7Up"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/Qtt7Up"
+                app:layout_constraintTop_toBottomOf="@+id/ETOasis" />
+
+            <EditText
+                android:id="@+id/ET7Up2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/ET7Up"
+                app:layout_constraintTop_toBottomOf="@+id/ETOasis2" />
+
+            <EditText
+                android:id="@+id/ETSchweppes"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/QttSchweppes"
+                app:layout_constraintTop_toBottomOf="@+id/ET7Up" />
+
+            <EditText
+                android:id="@+id/ETChips2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/ETChips"
+                app:layout_constraintTop_toTopOf="@+id/ETChips" />
+
+            <EditText
+                android:id="@+id/ETCocaCherry"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/QttCocaCherry"
+                app:layout_constraintTop_toBottomOf="@+id/ETCocaZ" />
+
+            <EditText
+                android:id="@+id/ETCocaCherry2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/ETCocaCherry"
+                app:layout_constraintTop_toBottomOf="@+id/ETCocaZ2" />
+
+            <EditText
+                android:id="@+id/ETChips"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/QttPain"
+                app:layout_constraintTop_toBottomOf="@+id/QttDespe" />
+
+            <EditText
+                android:id="@+id/ETIceTea"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/QttIceTea"
+                app:layout_constraintTop_toBottomOf="@+id/ETCocaCherry" />
+
+            <EditText
+                android:id="@+id/ETCoca2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/ETCoca"
+                app:layout_constraintTop_toTopOf="@+id/ETCoca" />
+
+            <EditText
+                android:id="@+id/ETCocaZ"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/QttCoca0"
+                app:layout_constraintTop_toBottomOf="@+id/ETCoca" />
+
+            <EditText
+                android:id="@+id/ETCocaZ2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/ETCocaZ"
+                app:layout_constraintTop_toBottomOf="@+id/ETCoca2" />
+
+            <TextView
+                android:id="@+id/TVChips2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Chips"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVDespe2" />
+
+            <TextView
+                android:id="@+id/QttPain"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@+id/TVPain"
+                app:layout_constraintTop_toTopOf="@+id/TVPain" />
+
+            <TextView
+                android:id="@+id/TVDespe2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Desperados"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVBierre2" />
+
+            <TextView
+                android:id="@+id/QttDespe"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@id/TVDespe2"
+                app:layout_constraintTop_toTopOf="@+id/TVDespe2" />
+
+            <TextView
+                android:id="@+id/TVPerrier2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Perrier"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVMaid2" />
+
+            <TextView
+                android:id="@+id/QttPerrier"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@id/TVPerrier2"
+                app:layout_constraintTop_toTopOf="@+id/TVPerrier2" />
+
+            <TextView
+                android:id="@+id/TVEau2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Eau"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVPerrier2" />
+
+            <TextView
+                android:id="@+id/QttEau"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@id/TVEau2"
+                app:layout_constraintTop_toTopOf="@+id/TVEau2" />
+
+            <TextView
+                android:id="@+id/TVBierre2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Hieneken"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVEauGaz2" />
+
+            <TextView
+                android:id="@+id/QttBierre2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@id/TVBierre2"
+                app:layout_constraintTop_toTopOf="@+id/TVBierre2" />
+
+            <TextView
+                android:id="@+id/TVEauGaz2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Eau petillante"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVEau2" />
+
+            <TextView
+                android:id="@+id/QttEauGaz"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@id/TVEauGaz2"
+                app:layout_constraintTop_toTopOf="@+id/TVEauGaz2" />
+
+            <TextView
+                android:id="@+id/TVMaid2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Min. Maid"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVFanta2" />
+
+            <TextView
+                android:id="@+id/QttMaid"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@id/TVMaid2"
+                app:layout_constraintTop_toTopOf="@+id/TVMaid2" />
+
+            <TextView
+                android:id="@+id/TVCoca2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Coca"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/QttCoca"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@id/TVCoca2"
+                app:layout_constraintTop_toTopOf="@+id/TVCoca2" />
+
+            <TextView
+                android:id="@+id/TVOrangina2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Orangina"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVSchweppes2" />
+
+            <TextView
+                android:id="@+id/QttOrangina"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@id/TVOrangina2"
+                app:layout_constraintTop_toTopOf="@+id/TVOrangina2" />
+
+            <TextView
+                android:id="@+id/TVLiptonic2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Liptonic"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVOrangina2" />
+
+            <TextView
+                android:id="@+id/QttLiptonic"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@id/TVLiptonic2"
+                app:layout_constraintTop_toTopOf="@+id/TVLiptonic2" />
+
+            <TextView
+                android:id="@+id/TVFanta2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Fanta"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVLiptonic2" />
+
+            <TextView
+                android:id="@+id/QttFanta"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@id/TVFanta2"
+                app:layout_constraintTop_toTopOf="@+id/TVFanta2" />
+
+            <TextView
+                android:id="@+id/TV7Up2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="7 Up"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVOasis2" />
+
+            <TextView
+                android:id="@+id/Qtt7Up"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@id/TV7Up2"
+                app:layout_constraintTop_toTopOf="@+id/TV7Up2" />
+
+            <TextView
+                android:id="@+id/TVSchweppes2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Schweppes"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TV7Up2" />
+
+            <TextView
+                android:id="@+id/QttSchweppes"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@id/TVSchweppes2"
+                app:layout_constraintTop_toTopOf="@+id/TVSchweppes2" />
+
+            <TextView
+                android:id="@+id/TVOasis2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Oasis"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVIceTea2" />
+
+            <TextView
+                android:id="@+id/QttOasis"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@id/TVOasis2"
+                app:layout_constraintTop_toTopOf="@+id/TVOasis2" />
+
+            <TextView
+                android:id="@+id/TVIceTea2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Ice Tea"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVCocaCherry2" />
+
+            <TextView
+                android:id="@+id/QttIceTea"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@id/TVIceTea2"
+                app:layout_constraintTop_toTopOf="@+id/TVIceTea2" />
+
+            <TextView
+                android:id="@+id/TVCocaCherry2"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Coca Cherry"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVCoca02" />
+
+            <TextView
+                android:id="@+id/QttCocaCherry"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@id/TVCocaCherry2"
+                app:layout_constraintTop_toTopOf="@+id/TVCocaCherry2" />
+
+            <TextView
+                android:id="@+id/TVCoca02"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="Coca0 "
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVCoca2" />
+
+            <TextView
+                android:id="@+id/QttCoca0"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@id/TVCoca02"
+                app:layout_constraintTop_toTopOf="@+id/TVCoca02" />
+
+            <EditText
+                android:id="@+id/ETCoca"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:ems="1000"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/QttCoca"
+                app:layout_constraintTop_toTopOf="@+id/QttCoca" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/BtnValide"
+        android:layout_width="196dp"
+        android:layout_height="68dp"
+        android:text="Valide"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

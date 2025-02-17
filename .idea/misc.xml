@@ -1,0 +1,32 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/maxim/AndroidStudioProjects/HBVABuvette/app/src/main/res/drawable-anydpi/ic_Reste.xml" value="0.2765" />
+        <entry key="..\:/Users/maxim/AndroidStudioProjects/HBVABuvette/app/src/main/res/layout/activity_caisse.xml" value="0.264" />
+        <entry key="..\:/Users/maxim/AndroidStudioProjects/HBVABuvette/app/src/main/res/layout/activity_casse_historique.xml" value="0.205859375" />
+        <entry key="..\:/Users/maxim/AndroidStudioProjects/HBVABuvette/app/src/main/res/layout/activity_date.xml" value="0.152" />
+        <entry key="..\:/Users/maxim/AndroidStudioProjects/HBVABuvette/app/src/main/res/layout/activity_historique.xml" value="0.15375" />
+        <entry key="..\:/Users/maxim/AndroidStudioProjects/HBVABuvette/app/src/main/res/layout/activity_main.xml" value="0.136" />
+        <entry key="..\:/Users/maxim/AndroidStudioProjects/HBVABuvette/app/src/main/res/layout/activity_popup.xml" value="0.205859375" />
+        <entry key="..\:/Users/maxim/AndroidStudioProjects/HBVABuvette/app/src/main/res/layout/activity_popup_Final.xml" value="0.21484375" />
+        <entry key="..\:/Users/maxim/AndroidStudioProjects/HBVABuvette/app/src/main/res/layout/activity_popup__somme_caisse.xml" value="0.205859375" />
+        <entry key="..\:/Users/maxim/AndroidStudioProjects/HBVABuvette/app/src/main/res/layout/activity_popup_caisse.xml" value="0.2" />
+        <entry key="..\:/Users/maxim/AndroidStudioProjects/HBVABuvette/app/src/main/res/layout/activity_popup_consigne.xml" value="0.205859375" />
+        <entry key="..\:/Users/maxim/AndroidStudioProjects/HBVABuvette/app/src/main/res/layout/activity_popup_final.xml" value="0.205859375" />
+        <entry key="..\:/Users/maxim/AndroidStudioProjects/HBVABuvette/app/src/main/res/layout/activity_popup_somme_caisse.xml" value="0.264" />
+        <entry key="..\:/Users/maxim/AndroidStudioProjects/HBVABuvette/app/src/main/res/layout/activity_stock.xml" value="0.16" />
+        <entry key="..\:/Users/maxim/AndroidStudioProjects/HBVABuvette/app/src/main/res/layout/activity_vente.xml" value="0.264" />
+        <entry key="..\:/Users/maxim/AndroidStudioProjects/HBVABuvette/app/src/main/res/layout/activity_vente2.xml" value="0.4" />
+        <entry key="..\:/Users/maxim/AndroidStudioProjects/HBVABuvette/app/src/main/res/layout/activity_vente3.xml" value="0.2" />
+        <entry key="..\:/Users/maxim/AndroidStudioProjects/HBVABuvette/app/src/main/res/layout/adapter_item.xml" value="0.205859375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
